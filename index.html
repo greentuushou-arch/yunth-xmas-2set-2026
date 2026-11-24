@@ -207,7 +207,8 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
 
 
 /* ---- ホリデーギフト ---- */
-.gift{background:var(--red-d);color:#fff}
+.gift{background:linear-gradient(180deg,#1d2b4f,#15203d);color:#fff;border-top:6px solid var(--gold);position:relative}
+.gift::before{content:"ここからは別商品のご案内";position:absolute;top:0;left:50%;transform:translate(-50%,-50%);white-space:nowrap;padding:4px 16px;background:var(--gold-grad);color:#15203d;font-weight:900;font-size:15px;letter-spacing:.08em;border-radius:999px}
 .gift .kicker{color:var(--gold-l)}
 .gift__pre{margin-top:12px;font-weight:900;font-size:20px;letter-spacing:.08em;color:var(--gold-l)}
 .gift__pre + .h2{margin-top:2px}
@@ -225,7 +226,7 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
 .gcard__price{margin-top:auto;padding-top:10px;font-family:var(--num);font-weight:500;font-size:32px;line-height:1}
 .gcard__price small{display:block;margin-top:4px;font-family:var(--sans);font-size:14px;font-weight:700}
 .gcard__go{margin-top:12px;padding:10px 4px;background:var(--red);color:#fff;font-weight:900;font-size:16px}
-.gift .note{margin-top:16px;color:#ffe3e6;text-align:left}
+.gift .note{margin-top:16px;color:#d9deea;text-align:left}
 
 /* ---- 注意 ---- */
 .notes{margin-top:24px;padding:22px 20px;background:var(--paper);text-align:left;font-size:15px;line-height:1.75;color:var(--ink2);list-style:none}
