@@ -95,6 +95,7 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
 .ticket__pre b{font-family:var(--num);font-weight:600;font-size:46px;color:var(--red);vertical-align:-.06em;margin:0 .06em}
 .ticket .off{font-size:112px;color:var(--red);margin-top:8px}
 .ticket__cpn{font-weight:900;font-size:38px;color:var(--red);letter-spacing:.06em}
+.mix{display:inline-block;margin-top:10px;padding:4px 18px;background:var(--red);color:#fff;font-weight:900;font-size:19px;letter-spacing:.06em;border-radius:2px}
 .calc{margin:24px auto 0;padding-top:22px;border-top:1px dashed var(--gold)}
 .calc__row{font-size:18px;color:var(--ink2)}
 .calc__row s{font-family:var(--num);font-weight:500;font-size:26px;text-decoration-thickness:2px}
@@ -103,6 +104,8 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
 .calc__after i{font-weight:900;font-size:30px;color:var(--red)}
 .calc__each{display:inline-block;margin-top:10px;padding:4px 16px;background:var(--blush);font-size:17px;font-weight:700}
 .calc__each b{font-family:var(--num);font-weight:600;font-size:26px;color:var(--red)}
+.calc__mix{margin-top:12px;font-weight:700;font-size:17px;line-height:1.6}
+.calc__mix b{font-family:var(--num);font-weight:600;font-size:30px;color:var(--red);margin:0 .04em}
 .calc .note{margin-top:12px}
 .cd{margin-top:28px;color:#fff}
 .cd__lbl{font-size:16px;letter-spacing:.14em;color:var(--gold-l)}
@@ -209,6 +212,7 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
 .mini__pre b{font-family:var(--num);font-weight:600;font-size:30px;color:var(--red);vertical-align:-.05em}
 .mini .off{font-size:52px;color:var(--red);margin-top:4px;max-width:100%}
 .mini__cpn{font-weight:900;font-size:22px;color:var(--red)}
+.mini__mix{margin-top:6px;padding:2px 6px;background:var(--red);color:#fff;font-weight:700;font-size:15px;white-space:nowrap}
 .rail .cd__nums{font-size:34px}
 .rail .cd__nums i{font-size:15px;margin:0 3px 0 1px}
 .rail .btn{font-size:18px;padding:14px 10px;margin-top:12px}
@@ -293,6 +297,7 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
     <p class="mini__pre">ポスト投函BOXを<br><b>2</b>個で</p>
     <span class="off"><b>1,000</b><span class="off__u"><i class="y">円</i><i class="o">OFF</i></span></span>
     <p class="mini__cpn">クーポン</p>
+    <p class="mini__mix">4種どれでも組み合わせOK</p>
   </div>
   <div class="cd" data-cd>
     <p class="cd__lbl" data-cd-lbl>スタートまで</p>
@@ -340,10 +345,12 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
       <p class="ticket__pre">ポスト投函BOXを<br><b>2</b>個購入で</p>
       <span class="off"><b>1,000</b><span class="off__u"><i class="y">円</i><i class="o">OFF</i></span></span>
       <p class="ticket__cpn">クーポン</p>
+      <p class="mix">4種どの組み合わせでもOK</p>
       <div class="calc">
         <p class="calc__row">4,180円 × 2個 ＝ <s>8,360</s>円</p>
         <p class="calc__after">クーポン利用で <span class="nw"><b>7,360</b><i>円</i></span></p>
         <p class="calc__each">1個あたり <b>3,680</b>円</p>
+        <p class="calc__mix">組み合わせ例<br><span class="nw">ビタミンBOX＋レチノール<sup>※</sup>BOX</span><br>9,360円 → <b>8,360</b>円</p>
         <p class="note">ビタミン・アゼライン<sup>※</sup>・PDRN<sup>※</sup> BOXは各4,180円、<span class="nw">レチノール<sup>※</sup>BOXは5,180円です。</span></p>
         <p class="note">※ アゼライン酸(保湿)／DNA-Na(保湿)／レチノール油液(ビタミンA 166,667IU/g)(整肌)</p>
       </div>
@@ -371,7 +378,7 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
       <div class="pair">
         <div class="pair__boxes"><span class="mbox"><b>12月の分</b><span class="logo"></span></span><span class="mbox"><b>1月の分</b><span class="logo"></span></span></div>
         <p class="pair__cap">同じ箱で<br>2か月分</p>
-        <p class="pair__txt">美容液28包×2で56包</p>
+        <p class="pair__txt">美容液56包分</p>
       </div>
       <div class="pair">
         <div class="pair__boxes"><span class="mbox"><b>ママへ</b><span class="logo"></span></span><span class="mbox"><b>姉妹へ</b><span class="logo"></span></span></div>
@@ -381,7 +388,7 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
       <div class="pair">
         <div class="pair__boxes"><span class="mbox"><b>朝のわたし</b><span class="logo"></span></span><span class="mbox"><b>夜のわたし</b><span class="logo"></span></span></div>
         <p class="pair__cap">ちがう箱を<br>2種類で</p>
-        <p class="pair__txt">4種から好きな2つを</p>
+        <p class="pair__txt">組み合わせは自由</p>
       </div>
     </div>
   </section>
@@ -432,7 +439,7 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
     <h2 class="h2">クーポンのご注意</h2>
     <ul class="notes">
       <li>クーポン配布期間は12月1日(火)0:00〜12月11日(金)9:59です。</li>
-      <li>クーポンはポスト投函BOXを2個以上ご購入の際にご利用いただけます。</li>
+      <li>クーポンはポスト投函BOXを2個以上ご購入の際にご利用いただけます。4種のBOXは組み合わせ自由です。</li>
       <li>クーポンは獲得してからご購入ください。ご購入後の適用はできません。</li>
       <li>クーポンの利用条件・枚数はクーポン獲得ページでご確認ください。</li>
       <li>クリスマス限定BOXは数量限定のため、なくなり次第終了となります。</li>
