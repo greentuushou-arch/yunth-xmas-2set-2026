@@ -203,6 +203,28 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
 .ship-list p{margin-top:4px;font-size:16px;color:var(--ink2)}
 .sec .ship-note{margin-top:16px;text-align:left}
 
+
+/* ---- ホリデーギフト ---- */
+.gift{background:var(--red-d);color:#fff}
+.gift .kicker{color:var(--gold-l)}
+.gift__pre{margin-top:12px;font-weight:900;font-size:20px;letter-spacing:.08em;color:var(--gold-l)}
+.gift__pre + .h2{margin-top:2px}
+.gift__lead{margin-top:12px;font-size:17px}
+.gift__hero{margin:26px -28px 0}
+.gift__tags{display:flex;justify-content:center;gap:8px;margin-top:20px}
+.gift__tags span{padding:2px 14px;border:1px solid var(--gold-l);color:var(--gold-l);font-weight:700;font-size:15px}
+.gcards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+.gcard{display:flex;flex-direction:column;background:var(--paper);color:var(--ink);text-decoration:none;text-align:center;transition:transform .2s}
+.gcard:hover{transform:translateY(-3px)}
+.gcard__body{flex:1;display:flex;flex-direction:column;padding:14px 10px 16px}
+.gcard__catch{font-weight:700;font-size:14px;line-height:1.5;color:var(--ink2)}
+.gcard__name{margin-top:6px;font-family:var(--min);font-weight:800;font-size:21px;line-height:1.35;letter-spacing:.04em}
+.gcard__plus{margin-top:6px;font-size:14px;font-weight:700;color:var(--red-d)}
+.gcard__price{margin-top:auto;padding-top:10px;font-family:var(--num);font-weight:500;font-size:32px;line-height:1}
+.gcard__price small{display:block;margin-top:4px;font-family:var(--sans);font-size:14px;font-weight:700}
+.gcard__go{margin-top:12px;padding:10px 4px;background:var(--red);color:#fff;font-weight:900;font-size:16px}
+.gift .note{margin-top:16px;color:#ffe3e6;text-align:left}
+
 /* ---- 注意 ---- */
 .notes{margin-top:24px;padding:22px 20px;background:var(--paper);text-align:left;font-size:15px;line-height:1.75;color:var(--ink2);list-style:none}
 .notes li{padding-left:1em;text-indent:-1em}
@@ -290,6 +312,8 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
   .box__top{padding:20px 18px 16px}.box__top i{font-size:54px}.box__top p{font-size:15px}
   .box__name{font-size:28px}
   .post__img{margin:24px -20px 0}
+  .gift__hero{margin:22px -20px 0}
+  .gcards{gap:8px}.gcard__name{font-size:19px}.gcard__price{font-size:28px}
   .end{padding:52px 20px 56px}
   .end__img{width:calc(100% + 40px);margin:20px -20px 8px}
 }
@@ -487,6 +511,40 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
     </ul>
   </section>
 
+
+  <!-- 07 ホリデーギフト -->
+  <section class="sec gift" id="gift" data-title="ギフトにはこちら">
+    <p class="kicker"><b>07</b>Special Gift BOX</p>
+    <p class="gift__pre">クリスマスギフトBOXに入った</p>
+    <h2 class="h2">ホリデーギフトは<br>こちら</h2>
+    <p class="gift__lead"><span class="nw">リボンのかかった赤い箱で、</span><span class="nw">大切な人へ。</span></p>
+    <div class="gift__hero"><img src="images/way-gift.jpg" width="720" height="720" alt="リボンのかかった赤いクリスマスギフトBOX" loading="lazy"></div>
+    <div class="gift__tags"><span>クリスマス限定</span><span>送料無料</span></div>
+    <div class="gcards">
+      <a class="gcard" data-gift href="#">
+        <img src="images/silky-box.jpg" width="1000" height="680" alt="シルキー肌BOX" loading="lazy">
+        <div class="gcard__body">
+          <p class="gcard__catch">シミ対策<sup>※1</sup>・<br>シワ改善<sup>※5</sup>集中なら</p>
+          <p class="gcard__name">シルキー肌<sup>※2</sup><br>BOX</p>
+          <p class="gcard__plus">生VA美容液<sup>＊</sup>入り</p>
+          <p class="gcard__price">¥16,830<small>(税込)</small></p>
+          <p class="gcard__go">商品ページへ</p>
+        </div>
+      </a>
+      <a class="gcard" data-gift href="#">
+        <img src="images/veil-box.jpg" width="1000" height="680" alt="ヴェール肌BOX" loading="lazy">
+        <div class="gcard__body">
+          <p class="gcard__catch">うるおい満タン<br>水光肌<sup>※3</sup>なら</p>
+          <p class="gcard__name">ヴェール肌<sup>※2</sup><br>BOX</p>
+          <p class="gcard__plus">生PDRN<sup>※4</sup><br>美容液入り</p>
+          <p class="gcard__price">¥15,840<small>(税込)</small></p>
+          <p class="gcard__go">商品ページへ</p>
+        </div>
+      </a>
+    </div>
+    <p class="note">どちらのBOXにも、生VC美白<sup>※1</sup>美容液<sup>＊</sup>・化粧水<sup>＊</sup>・クリーム<sup>＊</sup>が入っています。1,000円OFFクーポンはポスト投函BOXが対象です。<br>※1 メラニンの生成を抑え、しみ・そばかすを防ぐ　※2 仕上がりイメージのこと　※3 うるおいとツヤのある肌印象のこと　※4 DNA-Na(保湿)　※5 薬用VAセラムに含まれる有効成分ナイアシンアミドの承認効能<br>＊医薬部外品 薬用ホワイトエッセンスPVC α／薬用VAセラム／薬用ホワイトニングローション VCP／薬用 モイストクリーム PVC</p>
+  </section>
+
   <footer class="end">
     <p class="kicker">12/11(金) 9:59まで</p>
     <h2 class="h2">今年のご褒美は<br>2個でそろえて</h2>
@@ -541,6 +599,7 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
   }).join('');
 
   document.querySelectorAll('[data-item]').forEach(function(a){a.href=ITEM_URL;a.target='_blank';a.rel='noopener'});
+  document.querySelectorAll('[data-gift]').forEach(function(a){a.href='https://item.rakuten.co.jp/yunth/ys-r178/';a.target='_blank';a.rel='noopener'});
   document.querySelectorAll('[data-coupon]').forEach(function(a){a.href=COUPON_URL||'#coupon'});
 
   // メニュー(セクションの data-title から作る)
