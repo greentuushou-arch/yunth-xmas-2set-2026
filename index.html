@@ -74,9 +74,9 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
 .site{background:var(--red-dd);text-align:center}
 .site a{display:inline-block;padding:16px 20px;text-decoration:none}
 .site .logo{width:120px}
-.site--foot{padding:10px 0 96px}
+.site--foot{padding:28px 0 18px}
 .site--foot span{display:block;margin-top:6px;font-weight:700;font-size:15px;color:var(--gold-l);letter-spacing:.08em}
-.legal{display:flex;flex-direction:column;align-items:center;gap:4px;padding:0 20px 18px;background:var(--red-dd);color:#ffffffcc;font-size:14px;text-align:center}
+.legal{display:flex;flex-direction:column;align-items:center;gap:4px;padding:0 20px calc(92px + env(safe-area-inset-bottom));background:var(--red-dd);color:#ffffffcc;font-size:14px;text-align:center}
 .legal a{text-underline-offset:3px}
 
 /* ---- FV ---- */
@@ -237,10 +237,6 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
 .notes li{padding-left:1em;text-indent:-1em}
 .notes li::before{content:"※"}
 
-.end{position:relative;padding:60px 28px 64px;background:var(--fv);color:#fff;text-align:center}
-.end .kicker{color:var(--gold-l);font-family:var(--sans);font-style:normal;font-weight:700;font-size:18px}
-.end__img{width:calc(100% + 56px);max-width:none;margin:24px -28px 8px;-webkit-mask:linear-gradient(transparent,#000 10%,#000 90%,transparent);mask:linear-gradient(transparent,#000 10%,#000 90%,transparent)}
-.end .btn--line{color:#fff}
 
 /* ---- レール(PC) ---- */
 .rail{position:fixed;top:0;bottom:0;width:var(--rail);z-index:3;color:#fff;display:none;flex-direction:column;justify-content:center;padding:28px 26px}
@@ -280,7 +276,7 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
 @media (min-width:1180px){
   .rail{display:flex}
   .menubtn,.drawer,.bar{display:none}
-  .site--foot{padding-bottom:16px}
+  .legal{padding-bottom:20px}
 }
 @media (max-width:600px){
   .sec{padding:52px 20px}
@@ -322,8 +318,6 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
   .post__img{margin:24px -20px 0}
   .gift__hero{margin:22px -20px 0}
   .gcards{gap:8px}.gcard__name{font-size:19px}.gcard__price{font-size:28px}
-  .end{padding:52px 20px 56px}
-  .end__img{width:calc(100% + 40px);margin:20px -20px 8px}
 }
 @media (max-width:390px){
   .ticket .off{font-size:104px}
@@ -556,13 +550,6 @@ sup{font-size:clamp(9px,.4em,13px);font-weight:500;vertical-align:super;line-hei
     <p class="note">どちらのBOXにも、生VC美白<sup>※1</sup>美容液<sup>＊</sup>・化粧水<sup>＊</sup>・クリーム<sup>＊</sup>が入っています。500円OFFクーポンはポスト投函BOXが対象です。ギフトBOXのクーポンは12/1(火)10:00〜12/28(月)23:59です。<br>※1 メラニンの生成を抑え、しみ・そばかすを防ぐ　※2 仕上がりイメージのこと　※3 うるおいとツヤのある肌印象のこと　※4 DNA-Na(保湿)　※5 薬用VAセラムに含まれる有効成分ナイアシンアミドの承認効能<br>＊医薬部外品 薬用ホワイトエッセンスPVC α／薬用VAセラム／薬用ホワイトニングローション VCP／薬用 モイストクリーム PVC</p>
   </section>
 
-  <footer class="end">
-    <p class="kicker">12/11(金) 9:59まで</p>
-    <h2 class="h2">今年のご褒美は<br>2個でそろえて</h2>
-    <img class="end__img" src="images/post-vc.jpg" width="880" height="525" alt="ビタミンBOXを開いたところ" loading="lazy">
-    <a class="btn btn--gold" data-coupon href="#">クーポンを獲得する</a>
-    <a class="btn btn--line" data-item href="#">商品ページで2個選ぶ</a>
-  </footer>
   <div class="site site--foot"><a href="https://www.rakuten.co.jp/yunth/" target="_top"><span class="logo" role="img" aria-label="Yunth" style="margin:0 auto"></span><span>Yunthのトップページへ</span></a></div>
   <div class="legal"><a href="https://www.rakuten.co.jp/yunth/info.html" target="_blank" rel="noopener">特定商取引法に基づく表記</a><span>Copyright 2020 Yunth Inc. All Rights Reserved.</span></div>
 </main>
